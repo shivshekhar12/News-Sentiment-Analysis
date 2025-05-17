@@ -44,7 +44,3 @@ Dependencies
 - pandas
 - scikit-learn
 - vaderSentiment
-
-Notes
-- Datasets are not included. Add your own under the data/ folder.
-- Checkpoints are saved in ./results and loaded during evaluation.
