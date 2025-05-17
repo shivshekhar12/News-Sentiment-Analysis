@@ -1,29 +1,25 @@
-This project compares the sentiment classification of financial/news headlines using two different approaches:
-1. RoBERTa-based Transformer model, fine-tuned on labeled headline data.
-2. VADER Sentiment Analyzer, a rule-based NLP tool.
-It aims to evaluate how a modern deep learning model performs against a traditional sentiment analyzer, providing insights into accuracy, confidence, and runtime.
+News Headline Sentiment Classification using Fine-Tuned RoBERTa
 
-Features
-Fine-tunes FacebookAI/roberta-base using HuggingFace Transformers
-Predicts sentiment across three categories: positive, neutral, and negative
-- Outputs include:
-- Predicted label
-- Class probabilities
-- Compound sentiment score (RoBERTa)
+This project develops a custom sentiment analysis model trained specifically on news headlines. By fine-tuning a RoBERTa transformer, we classify headline sentiment into positive, neutral, and negative categories—achieving significantly better performance than traditional rule-based tools like VADER.
+
+Key Features
+Fine-tunes FacebookAI/roberta-base using Hugging Face Transformers on labeled news headline data.
+Predicts sentiment with:
+- Sentiment label (positive / neutral / negative)
+- Class probabilities (softmax output)
+- Custom compound sentiment score derived from model logits
 - Runtime comparison (RoBERTa vs VADER)
+Highlights how a deep learning model built for headlines outperforms VADER on accuracy, nuance handling, and reliability.
 
-Getting Started
-1. Install dependencies:
-pip install -r requirements.txt
-2. Train the model (optional):
-python train_model.py
-3. Run sentiment comparisons:
-python predict_sentiment.py
-
-Model Details
-= RoBERTa is fine-tuned on labeled news headlines across 3 sentiment classes.
-- VADER uses lexicon-based scoring to assign a sentiment label.
-- Results are compared for multiple real-world headlines.
+Model Overview
+RoBERTa Model
+- Fine-tuned on a labeled dataset of news headlines, enabling it to understand context, tone, and subtle sentiment cues missed by traditional analyzers.
+VADER
+- A lexicon-based rule engine designed for general sentiment detection. While fast, it struggles with headline nuance and domain-specific context.
+Our model shows consistent improvements in:
+- Prediction accuracy
+- Confidence scores
+- Context-sensitive sentiment interpretation
 
 Dependencies
 - torch
@@ -31,3 +27,4 @@ Dependencies
 - pandas
 - scikit-learn
 - vaderSentiment
+
