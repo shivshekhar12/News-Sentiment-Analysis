@@ -14,7 +14,7 @@ Predicts sentiment across three categories: positive, neutral, and negative
 
 Getting Started
 1. Clone this repo:
-git clone https://github.com/your-username/news-sentiment-analyzer.git
+git clone https://github.com/shivshekhar12/news-sentiment-analyzer.git
 cd news-sentiment-analyzer
 2. Install dependencies:
 pip install -r requirements.txt
