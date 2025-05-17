@@ -13,14 +13,11 @@ Predicts sentiment across three categories: positive, neutral, and negative
 - Runtime comparison (RoBERTa vs VADER)
 
 Getting Started
-1. Clone this repo:
-git clone https://github.com/shivshekhar12/news-sentiment-analyzer.git
-cd news-sentiment-analyzer
-2. Install dependencies:
+1. Install dependencies:
 pip install -r requirements.txt
-3. Train the model (optional):
+2. Train the model (optional):
 python train_model.py
-4. Run sentiment comparisons:
+3. Run sentiment comparisons:
 python predict_sentiment.py
 
 Model Details
