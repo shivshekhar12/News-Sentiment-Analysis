@@ -12,16 +12,6 @@ Predicts sentiment across three categories: positive, neutral, and negative
 - Compound sentiment score (RoBERTa)
 - Runtime comparison (RoBERTa vs VADER)
 
-Project Structure
-news-sentiment-analyzer/
-├── data/ # Training/validation CSVs (not included)
-├── results/ # Saved model checkpoints (after training)
-├── train_model.py # Fine-tunes RoBERTa on labeled data
-├── predict_sentiment.py # Loads model and compares VADER vs RoBERTa
-├── utils.py # Utility functions for loading and predicting
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
-
 Getting Started
 1. Clone this repo:
 git clone https://github.com/your-username/news-sentiment-analyzer.git
